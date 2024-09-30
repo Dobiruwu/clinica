@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Pacientes</title>
+    <link rel="stylesheet" href="/css/pacientes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>PACIENTES</h3>
+            <ul>
+                <li><i class="fas fa-users"></i> Lista de Pacientes</li>
+                <li><i class="fas fa-folder"></i> Expedientes</li>
+                <li><i class="fas fa-file-prescription"></i> Recetas</li>
+                <li><i class="fas fa-file-alt"></i> Documentos</li>
+            </ul>
+            <h3>AJUSTES</h3>
+            <ul>
+                <li><i class="fas fa-user"></i> Usuarios</li>
+                <li><i class="fas fa-user-shield"></i> Roles</li>
+            </ul>
+        </div>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Lista de Pacientes</h1>
+                <div class="search-container">
+                    <input type="text" placeholder="Buscar" />
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <button class="add-patient-btn"><i class="fas fa-plus"></i> Agregar Paciente</button>
+            </div>
+
+            <table class="patient-table">
+                <thead>
+                    <tr>
+                        <th>Paciente</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>Correo</th>
+                        <th>Teléfono</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nombre Nombre2 Apellido Apellido2</td>
+                        <td>22 - Octubre - 2024</td>
+                        <td>correo@correo.com</td>
+                        <td>1234 - 1234</td>
+                        <td>
+                            <button class="btn-view">Ver</button>
+                            <button class="btn-new-exp">Nuevo Expediente</button>
+                        </td>
+                    </tr>
+                    <!-- Repite los <tr> con los datos de los pacientes -->
+                </tbody>
+            </table>
+
+            <!-- Paginación -->
+            <div class="pagination">
+                <button class="page-number">1</button>
+                <button class="page-number">2</button>
+                <button class="page-number">3</button>
+                <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

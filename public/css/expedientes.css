@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #2f3c4f;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #455a77;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-actions input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.header-actions .btn-add {
+    background-color: #f46f30;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-actions .btn-add:hover {
+    background-color: #f58f50;
+}
+
+.expediente-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.expediente-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.expediente-info p {
+    margin-bottom: 5px;
+}
+
+.expediente-actions {
+    display: flex;
+    gap: 10px;
+}
+
+.expediente-actions .btn-view,
+.expediente-actions .btn-add-receta {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #2f3c4f;
+    color: white;
+}
+
+.expediente-actions .btn-view:hover {
+    background-color: #3f5066;
+}
+
+.expediente-actions .btn-add-receta {
+    background-color: #f46f30;
+}
+
+.expediente-actions .btn-add-receta:hover {
+    background-color: #f58f50;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f3c4f;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .page-btn:hover {
+    background-color: #3f5066;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Paciente</title>
+    <link rel="stylesheet" href="/css/stylgites.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Nuevo Paciente</h2>
+        <form action="/submit" method="POST">
+            <label for="nombres">Nombres *</label>
+            <input type="text" id="nombres" name="nombres" required>
+
+            <label for="apellidos">Apellidos *</label>
+            <input type="text" id="apellidos" name="apellidos" required>
+
+            <label for="fecha_nacimiento">Fecha de Nacimiento *</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+            <label for="correo">Correo</label>
+            <input type="email" id="correo" name="correo">
+
+            <label for="telefono">Teléfono *</label>
+            <input type="tel" id="telefono" name="telefono" required>
+
+            <label for="direccion">Dirección</label>
+            <textarea id="direccion" name="direccion"></textarea>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </div>
+</body>
+</html>

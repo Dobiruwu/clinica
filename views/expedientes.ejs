@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Expedientes</title>
+    <link rel="stylesheet" href="/css/expedientes.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra lateral -->
+        <nav class="sidebar">
+            <ul>
+                <li><h3>PACIENTES</h3></li>
+                <li><a href="#">Lista de Pacientes</a></li>
+                <li><a href="#">Expedientes</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="#">Documentos</a></li>
+                <li><h3>AJUSTES</h3></li>
+                <li><a href="#">Usuarios</a></li>
+                <li><a href="#">Roles</a></li>
+            </ul>
+        </nav>
+
+        <!-- Contenido principal -->
+        <div class="main-content">
+            <h2>Lista de Expedientes</h2>
+
+            <!-- Barra de búsqueda y botón agregar -->
+            <div class="header-actions">
+                <input type="text" placeholder="Buscar" id="searchInput">
+                <button class="btn-add">Agregar Expediente</button>
+            </div>
+
+            <!-- Lista de expedientes -->
+            <div class="expediente-list">
+                <div class="expediente-item">
+                    <div class="expediente-info">
+                        <p><strong>Paciente:</strong> Nombre Nombre2 Apellido Apellido2</p>
+                        <p><strong>Fecha de Creación:</strong> 22 - Octubre - 2024</p>
+                        <p><strong>Última Modificación:</strong> 22 - Octubre - 2024</p>
+                        <p><strong>Estado:</strong> N/A</p>
+                    </div>
+                    <div class="expediente-actions">
+                        <button class="btn-view">Ver</button>
+                        <button class="btn-add-receta">Agregar Receta</button>
+                    </div>
+                </div>
+
+                <!-- Repite el mismo bloque para cada expediente -->
+                <!-- Aquí puedes generar estos bloques dinámicamente desde la base de datos -->
+            </div>
+
+            <!-- Paginación -->
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/scripts.js"></script>
+</body>
+</html>
