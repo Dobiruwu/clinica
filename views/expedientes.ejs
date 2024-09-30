@@ -4,62 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Expedientes</title>
-    <link rel="stylesheet" href="/css/expedientes.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <!-- Barra lateral -->
-        <nav class="sidebar">
-            <ul>
-                <li><h3>PACIENTES</h3></li>
-                <li><a href="#">Lista de Pacientes</a></li>
-                <li><a href="#">Expedientes</a></li>
-                <li><a href="#">Recetas</a></li>
-                <li><a href="#">Documentos</a></li>
-                <li><h3>AJUSTES</h3></li>
-                <li><a href="#">Usuarios</a></li>
-                <li><a href="#">Roles</a></li>
-            </ul>
-        </nav>
-
-        <!-- Contenido principal -->
-        <div class="main-content">
-            <h2>Lista de Expedientes</h2>
-
-            <!-- Barra de búsqueda y botón agregar -->
-            <div class="header-actions">
-                <input type="text" placeholder="Buscar" id="searchInput">
-                <button class="btn-add">Agregar Expediente</button>
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Lista de Pacientes</a></li>
+            <li><a href="#">Expedientes</a></li>
+            <li><a href="#">Recetas</a></li>
+            <li><a href="#">Documentos</a></li>
+            <li class="ajustes"><a href="#">Usuarios</a></li>
+            <li><a href="#">Roles</a></li>
+        </ul>
+    </div>
+    
+    <div class="content">
+        <header>
+            <div class="menu-icon">&#9776;</div>
+            <div class="user-icon">&#128100;</div>
+        </header>
+        
+        <section class="expedientes">
+            <h1>Lista de Expedientes</h1>
+            <div class="top-bar">
+                <input type="search" placeholder="Buscar">
+                <button class="add-expediente">Agregar Expediente</button>
             </div>
-
-            <!-- Lista de expedientes -->
+            
             <div class="expediente-list">
-                <div class="expediente-item">
-                    <div class="expediente-info">
-                        <p><strong>Paciente:</strong> Nombre Nombre2 Apellido Apellido2</p>
-                        <p><strong>Fecha de Creación:</strong> 22 - Octubre - 2024</p>
-                        <p><strong>Última Modificación:</strong> 22 - Octubre - 2024</p>
-                        <p><strong>Estado:</strong> N/A</p>
+                <!-- Repite este bloque para más expedientes -->
+                <div class="expediente">
+                    <div class="info">
+                        <span><strong>Paciente:</strong> Nombre Nombre2 Apellido Apellido2</span>
+                        <span><strong>Fecha de Creación:</strong> 22 - Octubre - 2024</span>
+                        <span><strong>Última Modificación:</strong> 22 - Octubre - 2024</span>
+                        <span><strong>Estado:</strong> N/A</span>
                     </div>
-                    <div class="expediente-actions">
-                        <button class="btn-view">Ver</button>
-                        <button class="btn-add-receta">Agregar Receta</button>
+                    <div class="actions">
+                        <button class="view-btn">Ver</button>
+                        <button class="add-recipe-btn">Agregar Receta</button>
                     </div>
                 </div>
-
-                <!-- Repite el mismo bloque para cada expediente -->
-                <!-- Aquí puedes generar estos bloques dinámicamente desde la base de datos -->
+                <!-- Fin de bloque de expediente -->
             </div>
 
-            <!-- Paginación -->
             <div class="pagination">
-                <button class="page-btn">1</button>
+                <button class="page-btn active">1</button>
                 <button class="page-btn">2</button>
                 <button class="page-btn">3</button>
             </div>
-        </div>
+        </section>
     </div>
-
-    <script src="/scripts.js"></script>
 </body>
 </html>
