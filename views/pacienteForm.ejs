@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuevo Paciente</title>
+    <link rel="stylesheet" href="/css/forms.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+        <header>
+            <h1>Nuevo Paciente</h1>
+        </header>
+        
+        <section class="nuevo-paciente">
+            <form action="/guardar-paciente" method="POST">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="nombres">Nombres <span>*</span></label>
+                        <input type="text" id="nombres" name="nombres" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos <span>*</span></label>
+                        <input type="text" id="apellidos" name="apellidos" required>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="fecha-nacimiento">Fecha de Nacimiento <span>*</span></label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo</label>
+                        <input type="email" id="correo" name="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Teléfono <span>*</span></label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="direccion">Dirección</label>
+                    <textarea id="direccion" name="direccion" rows="3"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-guardar">Guardar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

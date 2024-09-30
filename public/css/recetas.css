@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: #091926;
+    padding: 20px;
+    color: white;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #172D40;
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #172D40;
+}
+
+.header-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.header-actions input[type="text"] {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+}
+
+.header-actions .btn-add {
+    background-color: #D96E30;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.header-actions .btn-add:hover {
+    background-color: #f58f50;
+}
+
+.patient-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.patient-table th, .patient-table td {
+    padding: 15px;
+    border: 1px solid #8C8C8C;
+    text-align: left;
+    color: #091926;
+}
+
+.patient-table th {
+    background-color: #F2F2F2;
+    color: #091926;
+    font-weight: 600;
+}
+
+.patient-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.patient-table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.patient-table .btn-view {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    background-color: #172D40;
+}
+
+.patient-table .btn-view:hover {
+    background-color: #091926;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination .page-btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #172D40;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.pagination .page-btn:hover {
+    background-color: #091926;
+}

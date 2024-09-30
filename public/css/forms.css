@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.content {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #091926;
+    margin-bottom: 20px;
+}
+
+.nuevo-expediente form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #091926;
+    font-weight: 600;
+}
+
+label span {
+    color: red;
+}
+
+select, textarea, input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #8C8C8C;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-guardar {
+    padding: 10px 20px;
+    background-color: #172D40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-guardar:hover {
+    background-color: #091926;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+    background-color: #F2F2F2;
+}
+
+.content {
+    width: 100%;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 32px;
+    text-align: center;
+    color: #091926;
+    margin-bottom: 20px;
+}
+
+.nuevo-paciente form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #091926;
+    font-weight: 600;
+}
+
+label span {
+    color: red;
+}
+
+input[type="text"], input[type="email"], input[type="date"], textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: none;
+}
+
+textarea::placeholder {
+    color: #8C8C8C;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn-guardar {
+    padding: 10px 20px;
+    background-color: #172D40;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-guardar:hover {
+    background-color: #091926;
+}

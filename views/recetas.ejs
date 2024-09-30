@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Expedientes</title>
+    <title>Lista de Recetas</title>
     <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -27,39 +27,38 @@
         </header>
         
         <section class="expedientes">
-            <h1>Lista de Expedientes</h1>
+            <h1>Lista de Recetas</h1>
             <div class="top-bar">
                 <input type="search" placeholder="Buscar"><button><i class="fas fa-search"></i></button>
-                <button class="add-expediente"><i class="fas fa-plus"></i> Agregar Expediente</button>
+                <button class="add-expediente"><i class="fas fa-plus"></i> Agregar Receta</button>
             </div>
             
             <div class="expediente-list">
-                <!-- Repite este bloque para más expedientes -->
+                <!-- Tabla de recetas -->
                 <table class="patient-table">
                     <thead>
                         <tr>
                             <th>Paciente</th>
-                            <th>Fecha de Creación</th>
-                            <th>Última Modificación</th>
-                            <th>Estado</th>
-                            <th></th>
+                            <th>Fecha de Emisión</th>
+                            <th>No Expediente</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
+                        <!-- Repite los <tr> con los datos de las recetas -->
                         <tr>
                             <td>Nombre Nombre2 Apellido Apellido2</td>
                             <td>22 - Octubre - 2024</td>
-                            <td>22 - Octubre - 2021</td>
-                            <td>Activo</td>
+                            <td>001</td>
+                            <td>Descripción Descripción Descripción Descripción...</td>
                             <td>
-                                <button class="view-btn">Ver</button>
-                                <button class="add-recipe-btn">Nuevo Expediente</button>
+                                <button class="view-btn"><i class="fas fa-eye"></i> Ver</button>
                             </td>
                         </tr>
-                        <!-- Repite los <tr> con los datos de los pacientes -->
                     </tbody>
                 </table>
-                <!-- Fin de bloque de expediente -->
+                <!-- Fin de tabla de recetas -->
             </div>
 
             <div class="pagination">
