@@ -4,38 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Pacientes</title>
-    <link rel="stylesheet" href="/css/pacientes.css">
+    <link rel="stylesheet" href="/css/Pacientescss">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="container">
         <!-- Sidebar -->
         <div class="sidebar">
-            <h3>PACIENTES</h3>
             <ul>
-                <li><i class="fas fa-users"></i> Lista de Pacientes</li>
-                <li><i class="fas fa-folder"></i> Expedientes</li>
-                <li><i class="fas fa-file-prescription"></i> Recetas</li>
-                <li><i class="fas fa-file-alt"></i> Documentos</li>
-            </ul>
-            <h3>AJUSTES</h3>
-            <ul>
-                <li><i class="fas fa-user"></i> Usuarios</li>
-                <li><i class="fas fa-user-shield"></i> Roles</li>
+                <h3>Pacientes</h3>
+                <li><a href="#"><i class="fas fa-users"></i> Lista de Pacientes</a></li>
+                <li><a href="#"><i class="fas fa-folder-open"></i> Expedientes</a></li>
+                <li><a href="#"><i class="fas fa-file-medical"></i> Recetas</a></li>
+                <li><a href="#"><i class="fas fa-file-alt"></i> Documentos</a></li>
+                <h3>Ajustes</h3>
+                <li><a href="#"><i class="fas fa-user-cog"></i> Usuarios</a></li>
+                <li><a href="#"><i class="fas fa-users-cog"></i> Roles</a></li>
             </ul>
         </div>
 
-        <!-- Main content -->
+        <!-- Main Content -->
         <div class="main-content">
-            <div class="header">
-                <h1>Lista de Pacientes</h1>
-                <div class="search-container">
-                    <input type="text" placeholder="Buscar" />
-                    <button><i class="fas fa-search"></i></button>
-                </div>
-                <button class="add-patient-btn"><i class="fas fa-plus"></i> Agregar Paciente</button>
+            <h2>Lista de Pacientes</h2>
+
+            <!-- Header Actions (Search and Add Button) -->
+            <div class="header-actions">
+                <input type="text" placeholder="Buscar">
+                <button class="btn-add"><i class="fas fa-plus-circle"></i> Agregar Paciente</button>
             </div>
 
+            <!-- Tabla de Lista de Pacientes (patient-table) -->
             <table class="patient-table">
                 <thead>
                     <tr>
@@ -43,30 +42,30 @@
                         <th>Fecha de Nacimiento</th>
                         <th>Correo</th>
                         <th>Teléfono</th>
-                        <th></th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
+                    <!-- Fila de ejemplo de paciente -->
                     <tr>
                         <td>Nombre Nombre2 Apellido Apellido2</td>
                         <td>22 - Octubre - 2024</td>
                         <td>correo@correo.com</td>
                         <td>1234 - 1234</td>
                         <td>
-                            <button class="btn-view">Ver</button>
-                            <button class="btn-new-exp">Nuevo Expediente</button>
+                            <button class="btn-view"><i class="fas fa-eye"></i> Ver</button>
+                            <button class="btn-add-expediente"><i class="fas fa-folder-plus"></i> Nuevo Paciente</button>
                         </td>
                     </tr>
-                    <!-- Repite los <tr> con los datos de los pacientes -->
+                    <!-- Fin de la fila de paciente -->
                 </tbody>
             </table>
 
             <!-- Paginación -->
             <div class="pagination">
-                <button class="page-number">1</button>
-                <button class="page-number">2</button>
-                <button class="page-number">3</button>
-                <button class="next-page"><i class="fas fa-chevron-right"></i></button>
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn">3</button>
             </div>
         </div>
     </div>

@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lista de Expedientes</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="sidebar">
         <ul>
-            <li><a href="#">Lista de Pacientes</a></li>
-            <li><a href="#">Expedientes</a></li>
-            <li><a href="#">Recetas</a></li>
-            <li><a href="#">Documentos</a></li>
-            <li class="ajustes"><a href="#">Usuarios</a></li>
-            <li><a href="#">Roles</a></li>
+            <li><a href="#"><i class="fas fa-users"></i> Lista de Pacientes</a></li>
+            <li><a href="#"><i class="fas fa-folder"></i> Expedientes</a></li>
+            <li><a href="#"><i class="fas fa-file-prescription"></i> Recetas</a></li>
+            <li><a href="#"><i class="fas fa-file-alt"></i> Documentos</a></li>
+            <li class="ajustes"><a href="#"><i class="fas fa-user"></i> Usuarios</a></li>
+            <li><a href="#"><i class="fas fa-user-shield"></i> Roles</a></li>
         </ul>
     </div>
     
@@ -28,24 +29,36 @@
         <section class="expedientes">
             <h1>Lista de Expedientes</h1>
             <div class="top-bar">
-                <input type="search" placeholder="Buscar">
-                <button class="add-expediente">Agregar Expediente</button>
+                <input type="search" placeholder="Buscar"><button><i class="fas fa-search"></i></button>
+                <button class="add-expediente"><i class="fas fa-plus"></i> Agregar Expediente</button>
             </div>
             
             <div class="expediente-list">
                 <!-- Repite este bloque para más expedientes -->
-                <div class="expediente">
-                    <div class="info">
-                        <span><strong>Paciente:</strong> Nombre Nombre2 Apellido Apellido2</span>
-                        <span><strong>Fecha de Creación:</strong> 22 - Octubre - 2024</span>
-                        <span><strong>Última Modificación:</strong> 22 - Octubre - 2024</span>
-                        <span><strong>Estado:</strong> N/A</span>
-                    </div>
-                    <div class="actions">
-                        <button class="view-btn">Ver</button>
-                        <button class="add-recipe-btn">Agregar Receta</button>
-                    </div>
-                </div>
+                <table class="patient-table">
+                    <thead>
+                        <tr>
+                            <th>Paciente</th>
+                            <th>Fecha de Creación</th>
+                            <th>Última Modificación</th>
+                            <th>Estado</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nombre Nombre2 Apellido Apellido2</td>
+                            <td>22 - Octubre - 2024</td>
+                            <td>22 - Octubre - 2021</td>
+                            <td>Activo</td>
+                            <td>
+                                <button class="view-btn">Ver</button>
+                                <button class="add-recipe-btn">Nuevo Expediente</button>
+                            </td>
+                        </tr>
+                        <!-- Repite los <tr> con los datos de los pacientes -->
+                    </tbody>
+                </table>
                 <!-- Fin de bloque de expediente -->
             </div>
 

@@ -1,56 +1,184 @@
-* {
+/* Estilos generales */
+body {
+    font-family: 'Josefin Sans', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+    background-color: #F2F2F2;
+    color: #091926;
 }
 
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f7f7f7;
-}
-
-.form-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-}
-
-h2 {
-    text-align: center;
-    margin-bottom: 20px;
+h1 {
     font-size: 24px;
+    color: #172D40;
+    margin-bottom: 20px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+strong {
+    font-weight: 600;
 }
 
-input, textarea {
+.patient-table {
     width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.patient-table thead {
+    background-color: #f4f5f7;
+}
+
+.patient-table th, .patient-table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.patient-table td button {
+    margin-right: 10px;
+}
+
+input[type="search"] {
     padding: 8px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: 1px solid #8C8C8C;
+    border-radius: 5px;
+    width: 200px;
+    outline: none;
+    margin-right: 10px;
 }
 
 button {
-    width: 100%;
-    padding: 10px;
-    background-color: #333;
-    color: white;
     border: none;
-    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    background-color: #091926;
+    width: 200px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li.ajustes a {
+    color: #D96E30;
+}
+
+/* Estilos de la sección principal */
+.content {
+    margin-left: 220px;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.menu-icon, .user-icon {
+    font-size: 24px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #555;
+/* Estilos de los expedientes */
+.expedientes {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.add-expediente {
+    background-color: #D96E30;
+    color: white;
+}
+
+.expediente-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.expediente {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F2F2F2;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #8C8C8C;
+}
+
+.expediente .info span {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.view-btn {
+    background-color: #172D40;
+    color: white;
+}
+
+.add-recipe-btn {
+    background-color: #D96E30;
+    color: white;
+}
+
+/* Paginación */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.page-btn {
+    padding: 10px;
+    margin: 0 5px;
+    background-color: white;
+    border: 1px solid #8C8C8C;
+}
+
+.page-btn.active {
+    background-color: #172D40;
+    color: white;
 }
