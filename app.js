@@ -6,15 +6,43 @@ const path = require('path');
 // Crear una aplicación de Express
 const app = express();
 
-// Middleware para body-parser
+// Middleware
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public'))); // Para servir archivos estáticos
+app.set('view engine', 'ejs'); // Cambia esto si usas otro motor de plantillas
+app.set('views', path.join(__dirname, 'views')); // Cambia la ruta según la ubicación de tus vistas
 
-// Configuración del motor de plantillas EJS
-app.set('view engine', 'ejs');
-app.set('views', path.join(__dirname, 'views'));
+// Rutas
 
-// Servir archivos estáticos desde la carpeta "public"
-app.use(express.static(path.join(__dirname, 'public')));
+// Ruta principal que muestra la lista de pacientes
+app.get('/pacientes', (req, res) => {
+    res.render('pacientes'); // Asegúrate de que este archivo exista en la carpeta de vistas
+});
+
+// Ruta para la lista de expedientes
+app.get('/expedientes', (req, res) => {
+    res.render('expedientes'); // Crea este archivo para mostrar los expedientes
+});
+
+// Ruta para la lista de recetas
+app.get('/recetas', (req, res) => {
+    res.render('recetas'); // Crea este archivo para mostrar las recetas
+});
+
+// Ruta para la lista de documentos
+app.get('/documentos', (req, res) => {
+    res.render('documentos'); // Crea este archivo para mostrar los documentos
+});
+
+// Ruta para la gestión de usuarios
+app.get('/usuarios', (req, res) => {
+    res.render('usuarios'); // Crea este archivo para gestionar usuarios
+});
+
+// Ruta para la gestión de roles
+app.get('/roles', (req, res) => {
+    res.render('roles'); // Crea este archivo para gestionar roles
+});
 
 /* Conexión a la base de datos */
 const db = mysql.createConnection({
