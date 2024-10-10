@@ -3,33 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuevo Paciente</title>
-    <link rel="stylesheet" href="/css/stylgites.css">
+    <title>Clínica Ortopedista</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div class="form-container">
-        <h2>Nuevo Paciente</h2>
-        <form action="/submit" method="POST">
-            <label for="nombres">Nombres *</label>
-            <input type="text" id="nombres" name="nombres" required>
+    <header>
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <div class="settings-icon">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/settings.png" alt="Ajustes">
+        </div>
+        <div class="user-icon">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/user.png" alt="Usuario">
+        </div>
+    </header>
+    
+    <aside class="sidebar">
+        <nav>
+            <ul>
+                <li class="sidebar-section-title">PACIENTES</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/user.png" alt="Lista de Pacientes"> Lista de Pacientes</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/document.png" alt="Expedientes"> Expedientes</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/receipt.png" alt="Recetas"> Recetas</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/document.png" alt="Documentos"> Documentos</li>
+                
+                <li class="sidebar-section-title">AJUSTES</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/settings.png" alt="Usuarios"> Usuarios</li>
+                <li><img src="https://img.icons8.com/ios-filled/20/ffffff/user-group-man-woman.png" alt="Roles"> Roles</li>
+            </ul>
+        </nav>
+    </aside>
 
-            <label for="apellidos">Apellidos *</label>
-            <input type="text" id="apellidos" name="apellidos" required>
-
-            <label for="fecha_nacimiento">Fecha de Nacimiento *</label>
-            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
-
-            <label for="correo">Correo</label>
-            <input type="email" id="correo" name="correo">
-
-            <label for="telefono">Teléfono *</label>
-            <input type="tel" id="telefono" name="telefono" required>
-
-            <label for="direccion">Dirección</label>
-            <textarea id="direccion" name="direccion"></textarea>
-
-            <button type="submit">Guardar</button>
-        </form>
-    </div>
+    <main>
+        <h1>Bienvenido al <br> Sistema Automatizado de Gestión de Expedientes</h1>
+        <button class="data-button">Datos ingresados en el portal</button>
+        <div class="data-cards">
+            <div class="card">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/user.png" alt="Pacientes">
+                </div>
+                <h2>Pacientes</h2>
+                <p>25</p>
+            </div>
+            <div class="card">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/document.png" alt="Expedientes">
+                </div>
+                <h2>Expedientes</h2>
+                <p>60</p>
+            </div>
+            <div class="card">
+                <div class="icon-container">
+                    <img src="https://img.icons8.com/ios-filled/50/ffffff/receipt.png" alt="Recetas">
+                </div>
+                <h2>Recetas</h2>
+                <p>32</p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
